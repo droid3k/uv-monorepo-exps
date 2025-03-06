@@ -4,14 +4,14 @@ requires-python = ">=3.12"
 
 [manifest]
 members = [
-    "p1",
+    "p1-new",
     "p2",
     "p3",
     "uv",
 ]
 
 [[package]]
-name = "p1"
+name = "p1-new"
 version = "0.1.0"
 source = { editable = "libs/p1" }
 
@@ -25,11 +25,11 @@ name = "p3"
 version = "0.1.0"
 source = { editable = "libs/p3" }
 dependencies = [
-    { name = "p1" },
+    { name = "p1-new" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "p1", editable = "libs/p1" }]
+requires-dist = [{ name = "p1-new", editable = "libs/p1" }]
 
 [[package]]
 name = "uv"
